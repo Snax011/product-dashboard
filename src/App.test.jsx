@@ -27,6 +27,6 @@ describe('Product Dashboard', () => {
 
     render(<ProductList products={outOfStockProducts} />)
 
-    expect(screen.getByTestId('no-stock-message')).toBeInTheDocument()
+    expect(screen.getByText(/No products in stock/i)).toBeInTheDocument()
   })
 })

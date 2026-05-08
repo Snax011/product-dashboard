@@ -11,7 +11,7 @@ function ProductList({ products }) {
       {/* Conditional rendering for the empty in-stock state. */}
       {!hasInStockProducts && (
         <Alert severity="warning" data-testid="no-stock-message" sx={{ mb: 2 }}>
-          No products are currently in stock.
+          No products in stock.
         </Alert>
       )}
 
